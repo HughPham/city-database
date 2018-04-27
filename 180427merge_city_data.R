@@ -130,4 +130,9 @@ clean_data %>%
     wholesale_retail_sales = 
     CN..Wholesale...Retail.Sales
   )
-names(clean_data)
+
+#-------------------------------------------
+# save files
+
+write_csv(clean_data, "180427city_part_one.csv",
+          na = "")
